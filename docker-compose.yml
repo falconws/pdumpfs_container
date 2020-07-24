@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  pdumpfs:
+    build:
+      context: ./build
+    container_name: pdumpfs
+    environment:
+      SOURCE: ${SOURCE}
+      DEST: ${DEST}
+      DAY: ${DAY}
+    volumes:
+      - /var/data:${SOURCE}
+      - /var/14day:${DEST}
