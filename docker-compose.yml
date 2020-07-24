@@ -4,6 +4,9 @@ services:
   pdumpfs:
     build:
       context: ./build
+      args:
+        - SOURCE=${SOURCE}
+        - DEST=${DEST}
     container_name: pdumpfs
     environment:
       SOURCE: ${SOURCE}

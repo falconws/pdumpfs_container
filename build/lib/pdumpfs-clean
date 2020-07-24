@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 #
 # pdumpfs-clean: cleanup old backup directory for pdumpfs
 #
